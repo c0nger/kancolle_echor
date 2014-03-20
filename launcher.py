@@ -4,6 +4,7 @@ this file can replace scheduler.bat ;-)
 launcher made by conger.g (conger.g@gmail.com)
 
 ver 0.2 : avoid minus time status
+ver 0.3 : change file name (for vaild kancolle echor module file name)
 """
 import os,sys,time
 from random import choice
@@ -17,7 +18,8 @@ def version_info():
 
 def loop():
     while True:
-        os.system("module.py")
+        #main logic of kancolle_echor
+        os.system("kancolle_echor.py")
         f = open(sleep_time_file,'r')
         try:
             result = f.readline()
